@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color: #1e3d32;
+  background-color: #1e3d32; /* Changed to blue */
   padding: 1em;
   display: flex;
   justify-content: center;
@@ -14,13 +14,14 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #4a90e2; /* Changed to blue */
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #336f57; /* Changed to a lighter blue */
 }
 
 .hero {
@@ -75,7 +76,7 @@ main {
   display: inline-block;
   margin-top: 1em;
   padding: 0.8em 1.5em;
-  background-color: #1e3d32;
+  background-color: #1e3d32; /* Changed to blue */
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -83,7 +84,7 @@ main {
 }
 
 .section-button:hover {
-  background-color: #336f57;
+  background-color: #336f57; /* Changed to a lighter blue */
 }
 
 .camp-section {
