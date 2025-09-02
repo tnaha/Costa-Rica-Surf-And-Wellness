@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color: #1e3d32; /* Changed to blue */
+  background-color: #004d99;
   padding: 1em;
   display: flex;
   justify-content: center;
@@ -14,14 +14,14 @@ nav {
 }
 
 nav a {
-  color: #4a90e2; /* Changed to blue */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #336f57; /* Changed to a lighter blue */
+  color: #007acc;
 }
 
 .hero {
@@ -35,10 +35,29 @@ nav a:hover {
   text-shadow: 1px 1px 6px #000;
   text-align: center;
   padding: 2em;
+  position: relative;
+  /* Dark overlay for better text readability */
+  z-index: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
 }
 
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 3.5em;
+  margin-bottom: 0.2em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
 }
 
 main {
@@ -76,7 +95,7 @@ main {
   display: inline-block;
   margin-top: 1em;
   padding: 0.8em 1.5em;
-  background-color: #1e3d32; /* Changed to blue */
+  background-color: #007acc;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -84,7 +103,7 @@ main {
 }
 
 .section-button:hover {
-  background-color: #336f57; /* Changed to a lighter blue */
+  background-color: #005691;
 }
 
 .camp-section {
@@ -96,7 +115,7 @@ main {
 }
 
 .camp-section h3 {
-  color: #1e3d32;
+  color: #004d99;
   margin-top: 0;
 }
 
@@ -105,20 +124,75 @@ main {
 }
 
 .site-footer {
-  background-color: #1e3d32;
+  background-color: #004d99;
   color: white;
   text-align: center;
   padding: 2em 1em;
-  border-top: 5px solid #4a90e2; /* Changed from green to blue */
+  border-top: 5px solid #007acc;
   margin-top: 4em;
   font-size: 0.95em;
 }
 
 .site-footer a {
-  color: #f4c542;
+  color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .site-footer a:hover {
   text-decoration: underline;
+  color: #007acc;
+}
+
+.map-section {
+    background-color: #e6f2ff;
+    padding: 3em;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 4em;
+}
+
+.map-section h2 {
+    color: #004d99;
+    margin-bottom: 1em;
+}
+
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.location-item {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1 1 200px;
+    text-align: left;
+}
+
+.location-item h4 {
+    margin: 0 0 0.5em;
+    color: #007acc;
+}
+
+.call-to-action {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 3em 1em;
+    border-radius: 10px;
+}
+
+.call-to-action h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.call-to-action p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto 1.5em;
 }
