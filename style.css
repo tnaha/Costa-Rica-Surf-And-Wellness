@@ -108,7 +108,7 @@ main {
   color: white;
   text-align: center;
   padding: 2em 1em;
-  border-top: 5px solid #f4c542;
+  border-top: 5px solid #4a90e2; /* Changed from green to blue */
   margin-top: 4em;
   font-size: 0.95em;
 }
